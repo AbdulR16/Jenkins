@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: Student Service
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    password: HR
+    url: jdbc:oracle:thin:@10.90.1.105:1521/DEV
+    username: HR
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port:
+    7071
+info:
+  app:
+    name: ${spring.application.name}  
+  bulid:
+    artifactId: '@project.artifact@'
+    groupId: '@project.groupId@'
+    version: '@project.version@'
+  java:
+    version:@java.version@
+logging:
+  level:
+    '[org.springframework.security]': debug
+    
+management:
+  endpoints:
+    web:
+     exposure:
+        include:
+          "*"
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+  
+         

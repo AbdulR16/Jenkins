@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    password: Abdul1234
+    url: jdbc:postgresql://abduldb.c7d94e5zto8e.us-east-1.rds.amazonaws.com:5432/test
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 5000

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.AppTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.039 s <<< FAILURE! - in com.example.demo.AppTest
+testGreetMethodRerturnNull  Time elapsed: 0.021 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <Abd>
+	at com.example.demo.AppTest.testGreetMethodRerturnNull(AppTest.java:46)
+
+testCurrencyShouldBeNegative  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.example.demo.AppTest.testCurrencyShouldBeNegative(AppTest.java:85)
+
